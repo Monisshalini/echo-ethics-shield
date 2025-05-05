@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from '@/components/ui/navigation-menu';
-import { ShieldCheck, LayoutDashboard, History, Settings, CodeJson } from 'lucide-react';
+import { ShieldCheck, LayoutDashboard, History, Settings, FileCode } from 'lucide-react';
 
 const Navigation = () => {
   return (
