@@ -17,23 +17,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 pb-12">
-      <header className="py-8 px-4 md:px-8 border-b">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="bg-shield-600 p-2 rounded-lg">
-                <ShieldCheck className="h-6 w-6 text-white" />
-              </div>
-              <h1 className="text-2xl font-bold tracking-tight gradient-text">Echo Ethics Shield</h1>
-            </div>
-            <div>
-              <p className="text-sm text-muted-foreground">v1.0 • Ethical AI Content Moderation</p>
-            </div>
-          </div>
-        </div>
-      </header>
-      
-      <main className="max-w-7xl mx-auto px-4 md:px-8 mt-8">
+      <main className="max-w-7xl mx-auto px-4 md:px-8 pt-8">
+        <h1 className="text-3xl font-bold tracking-tight mb-6">Content Analyzer</h1>
+        
         <div className="grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-1">
             <ContentAnalyzer onAnalysisComplete={handleAnalysisComplete} />
@@ -107,8 +93,8 @@ const Index = () => {
             <div className="mt-6 md:mt-0">
               <h4 className="font-medium mb-2">Resources</h4>
               <ul className="text-sm space-y-2">
-                <li><a href="#" className="text-shield-600 hover:underline">Documentation</a></li>
-                <li><a href="#" className="text-shield-600 hover:underline">Ethics Statement</a></li>
+                <li><a href="/api" className="text-shield-600 hover:underline">Documentation</a></li>
+                <li><a href="/settings" className="text-shield-600 hover:underline">Settings</a></li>
                 <li><a href="#" className="text-shield-600 hover:underline">Privacy Policy</a></li>
               </ul>
             </div>
